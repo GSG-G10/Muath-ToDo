@@ -120,7 +120,7 @@ useEffect(() =>localStorage.getItem('sticks')
       </div>
       <div className="site-card-border-less-wrapper">
         {sticky.map((e, i) => (
-          <Collapse defaultActiveKey={"0"}>
+          <Collapse defaultActiveKey={i}>
             <Panel header={e.title} key={i}>
               <span>priority{e.priority}</span>
               <p>{e.description}</p>
